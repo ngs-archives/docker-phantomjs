@@ -7,11 +7,12 @@ Dockerfile for Phantom JS
 
 https://hub.docker.com/r/atsnngs/phantomjs/
 
-Run Examples
-------------
+Quick Start
+-----------
 
 ```sh
-docker run --rm -v $(pwd)/examples:/examples phantomjs \
+docker pull atsnngs/phantomjs
+docker run --rm -v $(pwd)/examples:/examples atsnngs/phantomjs \
   --config=/examples/config.json /examples/trending.js
 ```
 
